@@ -16,6 +16,7 @@ class ArticlesTest < ApplicationSystemTestCase
 
     fill_in "Author", with: @article.author
     fill_in "Text", with: @article.text
+
     fill_in "Title", with: @article.title
     click_on "Create Article"
 
