@@ -15,6 +15,8 @@ class ArticlesTest < ApplicationSystemTestCase
     click_on "New Article"
 
     fill_in "Author", with: @article.author
+    fill_in "Text", with: @article.text
+
     fill_in "Title", with: @article.title
     click_on "Create Article"
 
@@ -27,6 +29,7 @@ class ArticlesTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Author", with: @article.author
+    fill_in "Text", with: @article.text
     fill_in "Title", with: @article.title
     click_on "Update Article"
 
